@@ -22,14 +22,14 @@ namespace BinarySearchTree
             {
                 rootNode = newNode;
             }
-            else if(newNode.Value > rootNode.Value)
-            {
-                rootNode.rightNode = newNode;
-            }
-            else if(newNode.Value <= rootNode.Value)
-            {
-                rootNode.leftNode = newNode;
-            }
+            //else if(newNode.Value > rootNode.Value)
+            //{
+            //    rootNode.rightNode = ;
+            //}
+            //else if(newNode.Value <= rootNode.Value)
+            //{
+            //    rootNode.leftNode = newNode;
+            //}
             else
             {
                 Node focusNode = rootNode;
