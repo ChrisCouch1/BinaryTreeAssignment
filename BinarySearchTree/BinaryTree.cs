@@ -30,6 +30,39 @@ namespace BinarySearchTree
             {
                 rootNode.leftNode = newNode;
             }
+            else
+            {
+                Node focusNode = rootNode;
+                while (true)
+                {
+                    if (newNode.Value > focusNode.Value)
+                    {
+                        if (focusNode.leftNode == null)
+                        {
+                            focusNode.leftNode = newNode;
+                            break;
+                        }
+                        else
+                        {
+                            focusNode = focusNode.leftNode;
+                        }
+                    }
+
+                    else if (newNode.Value <= focusNode.Value)
+                    {
+                        if (focusNode.rightNode == null)
+                        {
+                            focusNode.rightNode = newNode;
+                            break;
+                        }
+                        else
+                        {
+                            focusNode = focusNode.rightNode;
+                        }
+                        
+                    }
+                }
+            }
         }
     }
 }
