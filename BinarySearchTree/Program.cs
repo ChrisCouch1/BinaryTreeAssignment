@@ -29,6 +29,10 @@ namespace BinarySearchTree
             binaryTree.Add(node7);
             binaryTree.Add(node8);
             binaryTree.Add(node9);
+
+            Console.WriteLine("Would you like to search for a number?");
+            binaryTree.Search(int.Parse(Console.ReadLine()));
+            Console.ReadLine();
         }
     }
 }
