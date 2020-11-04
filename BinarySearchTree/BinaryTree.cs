@@ -83,6 +83,11 @@ namespace BinarySearchTree
                             Console.WriteLine("Value found");
                             return focusNode.leftNode.Value;
                         }
+                        if (focusNode.leftNode == null)
+                        {
+                            Console.WriteLine("Sorry the value could not be found");
+                            break;
+                        }
                         else
                         {
                             focusNode = focusNode.leftNode;
@@ -95,6 +100,11 @@ namespace BinarySearchTree
                         {
                             Console.WriteLine("Value found");
                             return focusNode.rightNode.Value;
+                        }
+                        if (focusNode.rightNode == null)
+                        {
+                            Console.WriteLine("Sorry the value could not be found");
+                            break;
                         }
                         else
                         {
